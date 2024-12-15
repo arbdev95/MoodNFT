@@ -46,21 +46,38 @@ forge build
 ## 📂 Project Structure
 
 MoodNFT/
+
 │
-├── src/                  # Smart contract sources
-│   ├── MoodNFT.sol       # Main NFT contract
-│   └── libraries/        # Supporting contract libraries
+
+├── src/   # Smart contract sources
+
+│   ├── MoodNFT.sol           # Main NFT contract
+
+│   └── libraries/            # Supporting contract libraries
+
 │
-├── test/                 # Foundry test suite
-│   ├── MoodNFTTest.sol   # Unit and integration tests
-│   └── mocks/            # Test mock contracts
+
+├── test/                     # Foundry test suite
+
+│   ├── MoodNFTTest.sol       # Unit and integration tests
+
+│   └── mocks/                # Test mock contracts
+
 │
-├── script/               # Deployment scripts
+
+├── script/                   # Deployment scripts
+
+
 │   ├── DeployMoodNFT.s.sol
+
 │   └── Interactions.s.sol
+
 │
-├── foundry.toml          # Foundry configuration
-└── remappings.json       # Library remappings
+
+├── foundry.toml              # Foundry configuration
+
+└── remappings.json           # Library remappings
+
 
 ## 🧪 Testing
 
