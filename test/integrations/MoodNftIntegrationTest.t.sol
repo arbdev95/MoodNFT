@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.19;
+
 import {Test, console} from "lib/forge-std/src/Test.sol";
 import {MoodNft} from "src/MoodNft.sol";
 import {DeployMoodNft} from "script/DeployMoodNft.s.sol";
@@ -36,9 +37,6 @@ contract MoodNftIntegrationTest is Test {
 
         console.log(moodNft.tokenURI(0));
 
-        assertEq(
-            keccak256(abi.encodePacked(moodNft.tokenURI(0))),
-            keccak256(abi.encodePacked(SAD_SVG_URI))
-        );
+        assertEq(keccak256(abi.encodePacked(moodNft.tokenURI(0))), keccak256(abi.encodePacked(SAD_SVG_URI)));
     }
 }

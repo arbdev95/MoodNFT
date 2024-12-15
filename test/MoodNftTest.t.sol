@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.19;
+
 import {Test, console} from "lib/forge-std/src/Test.sol";
 import {MoodNft} from "src/MoodNft.sol";
 import {DeployMoodNft} from "script/DeployMoodNft.s.sol";
@@ -16,8 +17,7 @@ contract MoodNftTest is Test {
         "bTEzNi44MSAxMTYuNTNjLjY5IDI2LjE3LTY0LjExIDQyLTgxLjUyLS43MyIgc3R5bGU9ImZpbGw6"
         "bm9uZTsgc3Ryb2tlOiBibGFjazsgc3Ryb2tlLXdpZHRoOiAzOyIvPgo8L3N2Zz4K";
     string public constant SAD_SVG_URI =
-        "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/"
-        "Pgo8c3ZnIHdpZHRoPSIxMDI0cHgi"
+        "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/" "Pgo8c3ZnIHdpZHRoPSIxMDI0cHgi"
         "IGhlaWdodD0iMTAyNHB4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiB4bWxucz0iaHR0cDovL3d3"
         "dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiMzMzMiIGQ9Ik01MTIgNjRDMjY0LjYg"
         "NjQgNjQgMjY0LjYgNjQgNTEyczIwMC42IDQ0OCA0NDggNDQ4IDQ0OC0yMDAuNiA0NDgtNDQ4Uzc1"

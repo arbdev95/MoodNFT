@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.19;
+
 import {Script, console} from "forge-std/Script.sol";
 import {MoodNft} from "src/MoodNft.sol";
 import {DevOpsTools} from "foundry-devops/src/DevOpsTools.sol";
@@ -16,10 +17,7 @@ contract MoodNftInteractions is Script {
         "bm9uZTsgc3Ryb2tlOiBibGFjazsgc3Ryb2tlLXdpZHRoOiAzOyIvPgo8L3N2Zz4K";
 
     function run() external {
-        address most_recently_deployed = DevOpsTools.get_most_recent_deployment(
-            "MoodNft",
-            block.chainid
-        );
+        address most_recently_deployed = DevOpsTools.get_most_recent_deployment("MoodNft", block.chainid);
 
         mintTheNft(most_recently_deployed);
     }
@@ -44,8 +42,7 @@ contract FlipMoodNft is Script {
     uint256 public constant TOKEN_ID_TO_FLIP = 0;
 
     function run() external {
-        address mostRecentlyDeployedMoodNft = DevOpsTools
-            .get_most_recent_deployment("MoodNft", block.chainid);
+        address mostRecentlyDeployedMoodNft = DevOpsTools.get_most_recent_deployment("MoodNft", block.chainid);
         flipMoodNft(mostRecentlyDeployedMoodNft);
     }
 
